@@ -1,0 +1,59 @@
+.header-top-container {
+    width: 80%;
+    margin: -20px auto;
+    display: flex;
+    align-items: center;
+  }
+  .header-logo-container {
+    flex: 1;
+  }
+  .App-logo {
+    height: 150px;
+    pointer-events: none;
+  }
+  .header-link-container {
+    color: #000000;
+  }
+  
+  .header-top-link {
+    color: #1d1d21;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 5px;
+    text-decoration: none;
+  }
+  .header-top-link:link, .header-top-link:visited {
+    color: #1d1d21;
+  }
+  
+  .header-navbar {
+    background: #343433;
+    color: #ffffff;
+    border-bottom: 4px solid #7d7d7d;
+  }
+  .header-navbar-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+  }
+  .header-navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 18px;
+    position: relative;
+  }
+  .active .header-navbar-link, .header-navbar-link:focus, .header-navbar-link:hover {
+    color: #00cef3;
+  }
+  .active .header-navbar-link::after, .header-navbar-link:focus::after, .header-navbar-link:hover::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #00cef3;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
